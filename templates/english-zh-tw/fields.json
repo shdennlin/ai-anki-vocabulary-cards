@@ -1,0 +1,107 @@
+{
+  "templateName": "English → Traditional Chinese Vocabulary",
+  "description": "Comprehensive vocabulary cards for learning English with Traditional Chinese translations and explanations",
+  "targetLanguage": "English",
+  "nativeLanguage": "Traditional Chinese (zh-TW)",
+  "ankiFields": [
+    {
+      "name": "Word",
+      "required": true,
+      "description": "The English vocabulary item (single word or phrase)",
+      "example": "serendipity"
+    },
+    {
+      "name": "Pronunciation",
+      "required": false,
+      "description": "IPA phonetic transcription (leave blank for phrases)",
+      "example": "/ˌserənˈdipədē/"
+    },
+    {
+      "name": "PartOfSpeech",
+      "required": true,
+      "description": "Grammatical category",
+      "example": "noun",
+      "validValues": ["noun", "verb", "adjective", "adverb", "phrase", "idiom"]
+    },
+    {
+      "name": "QuickDef",
+      "required": true,
+      "description": "Brief, memorable definition for quick recall",
+      "example": "pleasant surprise"
+    },
+    {
+      "name": "FullDef",
+      "required": true,
+      "description": "Complete English definition with context",
+      "example": "The occurrence of events by chance in a happy way"
+    },
+    {
+      "name": "B1Example",
+      "required": true,
+      "description": "Simple CEFR B1 level example sentence",
+      "example": "Finding that book was pure serendipity."
+    },
+    {
+      "name": "B2Example1",
+      "required": false,
+      "description": "More complex CEFR B2 level example sentence",
+      "example": "The serendipitous discovery changed her career path."
+    },
+    {
+      "name": "B2Example2",
+      "required": false,
+      "description": "Second B2 example showing different usage",
+      "example": "Their meeting was a serendipitous moment that led to lifelong friendship."
+    },
+    {
+      "name": "Synonyms",
+      "required": false,
+      "description": "Comma-separated list of similar words",
+      "example": "chance, luck, fortune"
+    },
+    {
+      "name": "Antonyms",
+      "required": false,
+      "description": "Comma-separated list of opposite words",
+      "example": "misfortune, bad luck"
+    },
+    {
+      "name": "Mnemonic",
+      "required": false,
+      "description": "Memory aid (image, pun, story)",
+      "example": "Serene + dip = peaceful discovery"
+    },
+    {
+      "name": "ChTrans",
+      "required": true,
+      "description": "Traditional Chinese translation",
+      "example": "意外收穫"
+    },
+    {
+      "name": "ChDef",
+      "required": false,
+      "description": "Brief explanation in Traditional Chinese",
+      "example": "指意外發現好事物"
+    },
+    {
+      "name": "Supplement",
+      "required": false,
+      "description": "Additional notes and usage tips",
+      "example": "Often used in academic contexts"
+    }
+  ],
+  "csvColumnOrder": [
+    "Word", "Pronunciation", "PartOfSpeech", "QuickDef", "FullDef",
+    "B1Example", "B2Example1", "B2Example2", "Synonyms", "Antonyms",
+    "Mnemonic", "ChTrans", "ChDef", "Supplement"
+  ],
+  "features": [
+    "Dark theme styling",
+    "Text-to-speech support",
+    "Conditional field display",
+    "Traditional Chinese support",
+    "Mobile-responsive design"
+  ],
+  "cefr_levels": ["B1", "B2"],
+  "version": "1.0.0"
+}

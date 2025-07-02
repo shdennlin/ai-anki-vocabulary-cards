@@ -1,0 +1,196 @@
+/* Base CSS Template for Language Pair Cards */
+/* Customize colors, fonts, and layout for your language */
+
+:root {
+  /* Color Theme - Modify these for your template */
+  --bg-card:    #2e2e2e;  /* Main card background */
+  --bg-box:     #383838;  /* Content box background */
+  --text-main:  #eeeeee;  /* Primary text color */
+  --text-muted: #bbb;     /* Secondary text color */
+  --accent:     #88c0d0;  /* Accent color for highlights */
+  --border:     #555;     /* Border color */
+  
+  /* Font Settings - Adjust for your language's script */
+  --font-main: "Helvetica Neue", Arial, sans-serif;
+  --font-native: "Helvetica Neue", Arial, sans-serif; /* Use language-specific fonts */
+  
+  /* Language-specific font examples: */
+  /* Chinese: "PingFang SC", "Microsoft YaHei", sans-serif */
+  /* Japanese: "Hiragino Sans", "Yu Gothic", sans-serif */
+  /* Korean: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif */
+  /* Arabic: "Tahoma", "Arial Unicode MS", sans-serif */
+}
+
+.card-front,
+.card-back {
+  background: var(--bg-card) !important;
+  color: var(--text-main);
+  font-family: var(--font-main);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left !important;
+  
+  /* Add language-specific text direction */
+  /* direction: rtl; */ /* Uncomment for RTL languages like Arabic/Hebrew */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.word {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  /* Add language-specific styling */
+  /* font-family: var(--font-native); */ /* For native language display */
+}
+
+.pronunciation {
+  color: var(--text-muted);
+  font-size: 0.9em;
+  margin-top: 4px;
+  /* Add pronunciation-specific styling */
+  /* font-family: "Times New Roman", serif; */ /* For IPA symbols */
+}
+
+.pos {
+  display: inline-block;
+  margin-top: 6px;
+  background: var(--accent);
+  color: var(--bg-card);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.tts {
+  font-size: 1.4em;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.tts:hover {
+  opacity: 1;
+}
+
+.box {
+  background: var(--bg-box);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  color: var(--accent);
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.label-inline {
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+.content {
+  color: var(--text-main);
+  /* Add native language font support */
+  /* font-family: var(--font-native); */ /* For native language content */
+}
+
+.definition-box {
+  border-left: 4px solid var(--accent);
+}
+
+.examples-box .content {
+  font-style: italic;
+}
+
+.sidebar {
+  background: var(--bg-box);
+}
+
+.supplement-box {
+  border: 2px dashed var(--border);
+  background: rgba(136, 192, 208, 0.1);
+}
+
+/* Language-specific additions */
+
+/* For Chinese characters */
+.chinese-text {
+  font-family: "PingFang SC", "Microsoft YaHei", "SimSun", sans-serif;
+  line-height: 1.6;
+}
+
+/* For Japanese text */
+.japanese-text {
+  font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  line-height: 1.8;
+}
+
+/* For Korean text */
+.korean-text {
+  font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  line-height: 1.6;
+}
+
+/* For Arabic/Hebrew (RTL) */
+.rtl-text {
+  direction: rtl;
+  text-align: right;
+  font-family: "Tahoma", "Arial Unicode MS", sans-serif;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .card-front,
+  .card-back {
+    padding: 15px;
+  }
+  
+  .word {
+    font-size: 1.5em;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .tts {
+    margin-top: 5px;
+  }
+}
+
+/*
+CUSTOMIZATION GUIDELINES:
+
+1. COLORS: Modify CSS variables in :root for different themes
+2. FONTS: Update --font-main and --font-native for your languages
+3. LAYOUT: Adjust for RTL languages or vertical text
+4. LANGUAGE-SPECIFIC: Add classes for special text formatting
+5. ACCESSIBILITY: Ensure good contrast ratios for your color choices
+
+LANGUAGE-SPECIFIC FONT RECOMMENDATIONS:
+
+Chinese (Simplified): "PingFang SC", "Microsoft YaHei", "SimHei", sans-serif
+Chinese (Traditional): "PingFang TC", "Microsoft JhengHei", "PMingLiU", sans-serif
+Japanese: "Hiragino Sans", "Yu Gothic", "Meiryo", "MS Gothic", sans-serif
+Korean: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif
+Arabic: "Tahoma", "Arial Unicode MS", "Noto Sans Arabic", sans-serif
+Hebrew: "David", "Arial Hebrew", "Noto Sans Hebrew", sans-serif
+Thai: "Thonburi", "Tahoma", "Noto Sans Thai", sans-serif
+*/

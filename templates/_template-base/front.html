@@ -1,0 +1,49 @@
+<!-- Front Template - Base Template -->
+<!-- Customize this template for your language pair -->
+<div class="card-front">
+  <header class="header">
+    <div class="header-left">
+      <h1 class="word">{{Word}}</h1>
+      {{#Pronunciation}}<div class="pronunciation">{{Pronunciation}}</div>{{/Pronunciation}}
+      {{#PartOfSpeech}}<span class="pos">{{PartOfSpeech}}</span>{{/PartOfSpeech}}
+    </div>
+    <!-- Add TTS support for your target language -->
+    <!-- Example for English: {{tts en_US:Word}} -->
+    <!-- Example for Spanish: {{tts es_ES:Word}} -->
+    <!-- Example for French: {{tts fr_FR:Word}} -->
+    <div class="tts">{{tts en_US:Word}}</div>
+  </header>
+
+  <div class="box definition-box">
+    {{#QuickDef}}<p class="label-inline"><span class="label">QUICK DEF:</span> <span class="content">{{QuickDef}}</span></p>{{/QuickDef}}
+    {{#FullDef}}<p class="label-inline"><span class="label">FULL DEF:</span> <span class="content">{{FullDef}}</span></p>{{/FullDef}}
+  </div>
+
+  <div class="box examples-box">
+    <p class="label-inline"><span class="label">EXAMPLES:</span></p>
+    {{#Example1}}<p class="label-inline"><span class="label">EXAMPLE:</span> <span class="content">{{Example1}}</span></p>{{/Example1}}
+    {{#Example2}}<p class="label-inline"><span class="label">EXAMPLE:</span> <span class="content">{{Example2}}</span></p>{{/Example2}}
+  </div>
+
+  <div class="box sidebar">
+    {{#Synonyms}}<p class="label-inline"><span class="label">SYNONYMS:</span> <span class="content">{{Synonyms}}</span></p>{{/Synonyms}}
+    {{#Antonyms}}<p class="label-inline"><span class="label">ANTONYMS:</span> <span class="content">{{Antonyms}}</span></p>{{/Antonyms}}
+    {{#Mnemonic}}<p class="label-inline"><span class="label">MNEMONIC:</span> <span class="content">{{Mnemonic}}</span></p>{{/Mnemonic}}
+  </div>
+
+  {{#Supplement}}
+    <div class="box supplement-box">
+      <p class="label">SUPPLEMENT:</p>
+      <p class="content">{{Supplement}}</p>
+    </div>
+  {{/Supplement}}
+</div>
+
+<!-- 
+CUSTOMIZATION NOTES:
+1. Update TTS language code for your target language
+2. Modify labels to match your language pair
+3. Add language-specific elements (e.g., furigana for Japanese)
+4. Adjust layout for different writing systems (RTL, vertical text)
+5. Rename field references to match your fields.json
+-->
