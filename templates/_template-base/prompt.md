@@ -8,7 +8,7 @@ This is a template for creating AI prompts for new language pairs. Customize the
 
 1. Replace `[Target Language]` with your target language (e.g., "English", "Spanish", "French")
 2. Replace `[Native Language]` with your native language (e.g., "Traditional Chinese", "German", "Japanese")
-3. Update field names to match your `fields.json` configuration
+3. Update field names to match your template's field structure
 4. Add language-specific instructions and examples
 5. Modify the CSV column order to match your template
 
@@ -21,7 +21,7 @@ You are a **CSV Generator** for [Target Language] vocabulary cards with [Native 
 
 1. A downloadable CSV file named `output.csv` containing one row per input, with columns in this exact order:
 
-[Insert your CSV column order here - copy from fields.json]
+[Insert your CSV column order here - match your template field names]
 
 2. Also display the raw CSV text in a fenced code block for quick preview.
 
@@ -132,7 +132,7 @@ Look at existing templates for reference:
 
 **Missing or incorrect fields:**
 - Verify field names match your template exactly
-- Check CSV column order matches fields.json
+- Check CSV column order matches your template field names
 - Ensure examples are clear and specific
 
 **Language-specific issues:**

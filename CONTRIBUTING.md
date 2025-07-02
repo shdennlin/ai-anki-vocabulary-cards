@@ -50,26 +50,13 @@ cd templates/your-language-pair
 - [ ] `back.html` - Anki back template
 - [ ] `style.css` - Card styling
 - [ ] `prompt.md` - AI generation prompt
-- [ ] `fields.json` - Field configuration
 - [ ] `preview/front.png` - Front card screenshot
 - [ ] `preview/back.png` - Back card screenshot
 
 ### Step 4: Customize Each File
 
-#### `fields.json`
-```json
-{
-  "templateName": "Spanish → English Vocabulary",
-  "targetLanguage": "Spanish",
-  "nativeLanguage": "English",
-  "ankiFields": [
-    // Update field definitions for your language pair
-  ]
-}
-```
-
 #### HTML Templates
-- Update field references to match your `fields.json`
+- Update field references to match your template's field structure
 - Add language-specific elements (furigana, diacritics, etc.)
 - Adjust layout for text direction (RTL for Arabic/Hebrew)
 
@@ -199,7 +186,6 @@ Brief description of the language pair and any special features.
 - templates/[language-pair]/back.html
 - templates/[language-pair]/style.css
 - templates/[language-pair]/prompt.md
-- templates/[language-pair]/fields.json
 - templates/[language-pair]/preview/front.png
 - templates/[language-pair]/preview/back.png
 

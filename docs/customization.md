@@ -334,30 +334,13 @@ function showHint() {
 
 ## Field Configuration
 
-### Modifying fields.json
+### Adding Custom Fields
 
-```json
-{
-  "templateName": "Custom Language Template",
-  "targetLanguage": "Spanish",
-  "nativeLanguage": "English",
-  "ankiFields": [
-    {
-      "name": "Word",
-      "required": true,
-      "description": "Spanish vocabulary item",
-      "example": "embarazoso"
-    },
-    {
-      "name": "Gender",
-      "required": false,
-      "description": "Grammatical gender",
-      "example": "masculine",
-      "validValues": ["masculine", "feminine", "neuter"]
-    }
-  ]
-}
-```
+To add custom fields to your template:
+
+1. **Add field in Anki**: Tools → Manage Note Types → Fields → Add
+2. **Update HTML templates** to include the new field
+3. **Modify AI prompt** to generate data for your custom fields
 
 ### AI Prompt Customization
 
@@ -367,7 +350,7 @@ Update the AI prompt to generate data for your custom fields:
 - **Gender**
 The grammatical gender for Spanish nouns (masculine, feminine, or leave blank for other parts of speech).
 
-- **Conjugation**
+- **Conjugation**  
 For verbs, provide the present tense conjugation (yo, tú, él/ella).
 ```
 

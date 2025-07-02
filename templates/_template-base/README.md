@@ -24,19 +24,13 @@ Each language template must include:
 - **`back.html`** - Anki back template  
 - **`style.css`** - Card styling
 - **`prompt.md`** - AI generation prompt
-- **`fields.json`** - Field configuration
 - **`preview/`** - Screenshot directory
   - `front.png` - Front card screenshot
   - `back.png` - Back card screenshot
 
 ### 3. Customization Steps
 
-1. **Update `fields.json`**
-   - Change `targetLanguage` and `nativeLanguage`
-   - Modify field descriptions for your language pair
-   - Add language-specific examples
-
-2. **Modify HTML Templates**
+1. **Modify HTML Templates**
    - Update field references to match your language
    - Adjust layout for different writing systems (RTL, vertical text, etc.)
    - Add language-specific elements (e.g., furigana for Japanese)
@@ -118,7 +112,6 @@ Before submitting:
 - [ ] Documentation in both languages
 - [ ] Working Anki import tested
 - [ ] Screenshots included
-- [ ] Field configuration complete
 - [ ] AI prompt functional
 - [ ] Code follows project standards
 
