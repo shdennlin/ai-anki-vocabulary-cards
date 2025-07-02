@@ -29,6 +29,7 @@
   - [🆘 Troubleshooting \& FAQ](#-troubleshooting--faq)
     - [Common Issues](#common-issues)
     - [FAQ](#faq)
+  - [🤝 Contributing](#-contributing)
 
 ## 🚀 Quick Start (30 seconds)
 
@@ -57,11 +58,9 @@
 
 Here's exactly what your vocabulary cards will look like:
 
-### Front of Card (What you see when studying)
-![Front Card Example](screenshot/front-screenshot.png)
-
-### Back of Card (The answer with all the details)  
-![Back Card Example](screenshot/back-screenshot.png)
+| **Front of Card** (What you see when studying) | **Back of Card** (The answer with all the details) |
+|:-----------------------------------------------:|:---------------------------------------------------:|
+| ![Front Card Example](screenshot/front-screenshot.png) | ![Back Card Example](screenshot/back-screenshot.png) |
 
 **Pretty impressive, right?** Your cards will have a professional dark theme with all the vocabulary information beautifully organized!
 
@@ -269,6 +268,34 @@ Start with 10-20 words. Very long lists might overwhelm the AI or hit token limi
 
 **Can I customize the fields?**  
 Absolutely! Modify both the AI prompt and the Anki templates to match your learning style.
+
+## 🤝 Contributing
+
+**We welcome contributions!** This project can be expanded in many exciting ways:
+
+### 🎨 Template Contributions
+- **New card designs** - Different color themes, layouts, or styling approaches
+- **Subject-specific templates** - Cards optimized for grammar, idioms, business vocabulary, etc.
+- **Language variations** - Templates adapted for learning other languages
+
+### 🧠 AI Prompt Improvements  
+- **Specialized prompts** - For technical vocabulary, academic terms, or specific domains
+- **Multi-language prompts** - Generate cards for learning languages other than English
+- **Enhanced field generation** - Better examples, mnemonics, or cultural context
+
+### 📚 Additional Card Types
+- **Grammar cards** - For learning sentence patterns and grammar rules
+- **Listening comprehension** - Templates that work with audio files
+- **Image-based cards** - Visual vocabulary with picture associations
+
+### 🛠️ How to Contribute
+1. **Fork this repository**
+2. **Create your feature branch** (`git checkout -b feature/amazing-template`)
+3. **Add your templates** in a new folder (e.g., `template/business-vocabulary/`)
+4. **Update documentation** with usage instructions
+5. **Submit a pull request** with a clear description
+
+**Questions or ideas?** Open an issue to discuss your contribution ideas!
 
 ---
 
