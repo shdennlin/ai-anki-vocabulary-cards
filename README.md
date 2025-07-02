@@ -1,7 +1,11 @@
 
 # 🎯 AI-Powered Anki Cards for English Vocabulary Learning
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Transform your English vocabulary learning with AI-generated Anki cards!** This project helps you create beautiful, comprehensive vocabulary cards in minutes instead of hours.
+
+> **🌐 Language:** English | [繁體中文](README-zh-TW.md)
 
 ## 📚 Table of Contents
 
@@ -11,8 +15,6 @@
   - [📋 What You Need Before Starting](#-what-you-need-before-starting)
   - [🎁 What You'll Get](#-what-youll-get)
   - [👀 See Your Cards in Action](#-see-your-cards-in-action)
-    - [Front of Card (What you see when studying)](#front-of-card-what-you-see-when-studying)
-    - [Back of Card (The answer with all the details)](#back-of-card-the-answer-with-all-the-details)
   - [📚 Complete Step-by-Step Tutorial](#-complete-step-by-step-tutorial)
     - [Step 1: Prepare Your Word List](#step-1-prepare-your-word-list)
     - [Step 2: Generate Cards with AI](#step-2-generate-cards-with-ai)
@@ -30,6 +32,10 @@
     - [Common Issues](#common-issues)
     - [FAQ](#faq)
   - [🤝 Contributing](#-contributing)
+    - [🎨 Template Contributions](#-template-contributions)
+    - [🧠 AI Prompt Improvements](#-ai-prompt-improvements)
+    - [📚 Additional Card Types](#-additional-card-types)
+    - [🛠️ How to Contribute](#️-how-to-contribute)
 
 ## 🚀 Quick Start (30 seconds)
 
@@ -116,7 +122,8 @@ Your vocabulary cards will be packed with useful information! Here's what each f
 
 **Simply copy the text below and paste it into ChatGPT, Claude, or any AI assistant:**
 
-> **💡 Pro Tip:** This works best with ChatGPT (GPT-4), Claude, or similar AI models. Results may vary with different AI tools.
+> [!NOTE]
+> **💡 Pro Tip:** This template has been tested with GPT o4-mini. Results may vary with different AI tools.
 
 ``` prompt
 You are a **CSV Generator**. When I provide you with multiple English words or phrases—each on its own line—output:
@@ -221,7 +228,7 @@ The `template/` folder contains everything you need for gorgeous cards:
    - B1Example, B2Example1, B2Example2, Synonyms, Antonyms  
    - Mnemonic, ChTrans, ChDef, Supplement
 
-### Part 2: Apply Our Beautiful Templates  
+### Part 2: Apply Our Beautiful Templates
 
 1. **Click "Cards..."** in the Note Type manager
 2. **Copy our front template** from `template/front-template.html` and paste it in the "Front Template" box
