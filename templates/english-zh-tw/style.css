@@ -61,12 +61,12 @@
 
 /* Inline label and content */
 .label-inline {
-  display: flex;
-  align-items: center;
+  display: block;
   margin: 4px 0;
   text-align: left !important;
 }
 .label {
+  display: block;
   color: var(--accent);
   font-size: 0.95em;
   font-weight: bold;
@@ -75,24 +75,68 @@
   text-align: left !important;
 }
 .content {
-  display: inline;
+  display: block;
   color: var(--text-main);
   font-size: 1em;
   line-height: 1.4;
   text-align: left !important;
+  margin-left: 16px;
+}
+
+.supplement-box .content {
+  margin-left: 16px;
+}
+
+@media (min-width: 600px) {
+  .label-inline {
+    display: flex;
+    align-items: top;
+  }
+  .label {
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 2px;
+    margin-bottom: 0;
+  }
+  .content {
+    display: inline-block;
+    margin-left: 0;
+  }
+  .supplement-box .content {
+    margin-left: 0;
+  }
 }
 
 .supplement-box .label {
-  display: block;
+  /* display: block; */
   margin-top: 4px;
-  margin-bottom: 4px;
+  margin-bottom: 0;
 }
 
 .supplement-box {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.supplement-box p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Sidebar */
 .sidebar {
   margin-bottom: 8px;
+}
+
+.quickdef-inline {
+  display: flex !important;
+  align-items: center !important;
+}
+.quickdef-inline .label {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 0;
+}
+.quickdef-inline .content {
+  display: inline-block;
+  margin-left: 0;
 }
